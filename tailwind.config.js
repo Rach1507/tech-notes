@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,6 +14,11 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        deGrund: ['"Playwrite DE Grund"'],
+        handwritten: ['"Dancing Script"'],
+        
+      }, 
     },
   },
   plugins: [],
