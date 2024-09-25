@@ -17,8 +17,15 @@ module.exports = {
       fontFamily: {
         deGrund: ['"Playwrite DE Grund"'],
         handwritten: ['"Dancing Script"'],
-        
-      }, 
+        silkscreenBold: ["Silkscreen", "sans-serif"],
+        lobster: ["Lobster", "sans-serif"],
+        spaceGrotesk: ["Space Grotesk"],
+        texturina: ["Texturina"],
+        anybody: ["Anybody"],
+        museoModerno: ["MuseoModerno"],
+        slab: ["Josefin Slab"],
+        jura: ["Jura"]
+      },
     },
   },
   plugins: [],

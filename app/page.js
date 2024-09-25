@@ -6,7 +6,7 @@ export default function Home() {
   from-blue-950 to-black  leading-relaxed text-slate-300 select-none">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         Rachitha's Personal Space - 
-        <div>Welcome to my Space which has curated/ non-curated things I consider too precious to not be documented and left to be gone to haze by neural connections decay </div>
+        <div>Welcome to my Space which has curated/ non-curated things I consider too precious to not be documented and left to be gone to haze by neural connections decay🦋🕊️🌻🪴⚡️</div>
 
 
 {/* <div>Step into my little universe, where every moment is a treasure waiting to be captured. This is a space where the curated and uncurated come together—stories, ideas, and memories I simply can’t let slip away, too precious to be stored in the prefrontal cortex and naturally weaken due to the decay of neural connections in the hippocampus.</div> */}
