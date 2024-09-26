@@ -1,0 +1,11 @@
+{
+    "title": "pages",
+    "what are they ": [
+        "leaf of a route",
+        "its default exported comp is ui for the leaf "
+    ],
+    "file format": "js / jsx / tsx",
+    "what routes under a folder are accesible": "/ - if its having page.js",
+    "default type of component ": "server by def , client if use client is used "
+    
+}
