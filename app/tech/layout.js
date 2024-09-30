@@ -5,7 +5,7 @@ export default function DashboardLayout({ children }) {
         <div className="grid grid-rows-[20px_3fr_20px] min-h-screen w-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-gradient-to-bl
       from-slate-900 via-black  to-blue-950 leading-relaxed text-slate-300 select-none">
             {/* Include shared UI here e.g. a header or sidebar */}
-            <nav className="w-full grid grid-cols-[1fr_4fr_1fr]">
+            <nav className="w-full grid grid-cols-[1fr_4fr_1fr] font-texturina text-xl">
 
                 <div className="flex flex-start">  <Image
                     aria-hidden

@@ -15,6 +15,7 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
+        sketch : ["Cabin Sketch"],
         deGrund: ['"Playwrite DE Grund"'],
         handwritten: ['"Dancing Script"'],
         silkscreenBold: ["Silkscreen", "sans-serif"],
