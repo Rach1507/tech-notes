@@ -1,0 +1,24 @@
+{
+    "Navigation":[
+        "Link","useRouter","redirect","Native browser History APi "
+    ],
+    "Link": {
+        "href": ["/notes","/notes/${title.slug}","/notes#footer"],
+        "benefits": ["prefetching"],
+        "when to use": "",
+        "to know the current pathname ": "usePathname",
+        "built-in component that extends the HTML <a> tag":" to provide prefetching and client-side navigation between routes"
+
+
+    },
+    "useRouter":{
+
+    },"redirect":{
+
+    },"Browser history API":{
+
+    },
+    "how routing and nav works":{
+        
+    }
+}

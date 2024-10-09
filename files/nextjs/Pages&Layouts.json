@@ -1,0 +1,35 @@
+{
+    "layout": {
+        "title": "layout",
+        "what are they ": [
+            "stays interactive ",
+            "re-renders ",
+            "can fetch and use data ",
+            "cant passin info/ data to children",
+            "can be nested"
+        ],
+        "file format": "js / jsx / tsx",
+        "who are the children": "if its having page.js and all ui accesible under that folder",
+        "default type of component ": "server by def , client if use client is used ",
+        "root layout ": " can have html and body , contains ui returned by server "
+    },
+    "template": {
+        "title": "template",
+        "what are they ": [
+            "new instance created for each of their children on navigation, remounts ",
+            "data or state is not preserved",
+            "effects are re-synchronized."
+        ],
+        "file format": "js / jsx / tsx",
+        "nesting": "under layout",
+        "note": "template can be defined by exporting a default React component from a template.js file. The component should accept a children prop."
+    },
+    "metadata": {
+        "modify metadata": {
+            "how": "metadata API -  object - generateMetadata",
+            "where": "pages or layout.js ",
+            "use": ""
+        },
+        "Good to know": "You should not manually add <head> tags such as <title> and <meta> to root layouts. Instead, you should use the Metadata API which automatically handles advanced requirements such as streaming and de-duplicating <head> elements."
+    }
+}
