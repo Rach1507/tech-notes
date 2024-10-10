@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function BlogOverview() {
 
-    const categories = ["ReactJS","NextJS","CSS / Tailwind","Design","DX / Learning / Productivity","Performance / Optimization","Stories / Inspiration"," Problem Solving"]
+    const categories = ["ReactJS", "NextJS", "CSS / Tailwind", "Design", "DX / Learning / Productivity", "Performance / Optimization", "Stories / Inspiration", " Problem Solving"]
     return (
         <div className="p-5 row-start-2 row-span-2 h-[200vh] w-full  gap-0 antialiased  font-light outline-dotted rounded-xl outline-slate-800 leading-relaxed text-slate-300 select-none ">
 
@@ -23,7 +23,7 @@ export default function BlogOverview() {
                  divide-x divide-dashed divide-slate-500 md:divide-x-0 md:divide-y items-center content-baseline">
 
 
-                    {categories.map((category)=> <Link className="p-2" href="/categories${category}"> {category} </Link>)}
+                    {categories.map((category) => <Link className="p-2" href="/categories${category}"> {category} </Link>)}
 
                 </div>
             </div>
