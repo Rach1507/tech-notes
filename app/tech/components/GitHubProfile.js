@@ -29,6 +29,44 @@ const GitHubProfile = ({ username = 'yourusername' }) => {
 
     fetchGitHubData();
   }, [username]);
+    // Function to get PR state color
+    const getPRStateColor = (state) => {
+        switch (state) {
+          case 'open':
+            return 'text-green-500';
+          case 'closed':
+            return 'text-red-500';
+          case 'merged':
+            return 'text-purple-500';
+          default:
+            return 'text-gray-500';
+        }
+      };
+    
+      // Function to get PR state icon
+      const getPRStateIcon = (state) => {
+        switch (state) {
+          case 'open':
+            return <GitPullRequest className="w-4 h-4 text-green-500" />;
+          case 'closed':
+            return <XCircle className="w-4 h-4 text-red-500" />;
+          case 'merged':
+            return <CheckCircle2 className="w-4 h-4 text-purple-500" />;
+          default:
+            return <GitPullRequest className="w-4 h-4 text-gray-500" />;
+        }
+      };
+
+        // Function to format the date
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(
+      Math.ceil((date - new Date()) / (1000 * 60 * 60 * 24)),
+      'day'
+    );
+  };
+
+//   const { user, pullRequests } = userData;
 
   if (!userData) {
     return (
@@ -70,7 +108,65 @@ const GitHubProfile = ({ username = 'yourusername' }) => {
         </CardContent>
       </Card>
 
-      {/* Recent Repositories Card */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            {/* <GitPullRequest className="w-5 h-5" /> */}
+            Latest Pull Requests 
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-4">
+            {/* {pullRequests.map((pr) => (
+              <div
+                key={pr.id}
+                className="p-4 border rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start space-x-2">
+                    {getPRStateIcon(pr.state)}
+                    <div>
+                      <a
+                        href={pr.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-blue-600 hover:underline"
+                      >
+                        {pr.title}
+                      </a>
+                      <p className="text-sm text-gray-600 mt-1">
+                        {pr.repository_url.split('/').slice(-1)} #{pr.number}
+                      </p>
+                    </div>
+                  </div>
+                  <span className="text-sm text-gray-500">
+                    {formatDate(pr.updated_at)}
+                  </span>
+                </div>
+                
+                {pr.body && (
+                  <p className="text-sm text-gray-600 mt-2 line-clamp-2">
+                    {pr.body}
+                  </p>
+                )}
+                
+                <div className="flex items-center gap-4 mt-2 text-sm text-gray-500">
+                  <span className={`flex items-center gap-1 ${getPRStateColor(pr.state)}`}>
+                    {pr.state.charAt(0).toUpperCase() + pr.state.slice(1)}
+                  </span>
+                  {pr.comments > 0 && (
+                    <span className="flex items-center gap-1">
+                      💬 {pr.comments} comments
+                    </span>
+                  )} */}
+                {/* </div>
+              </div>
+            ))} */}
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Recent Repositories Card
       <Card>
         <CardHeader>
           <CardTitle>Recent Repositories</CardTitle>
@@ -90,7 +186,7 @@ const GitHubProfile = ({ username = 'yourusername' }) => {
                 >
                   {repo.name}
                 </a>
-                {/* <p className="text-sm font-normal mt-1">{repo.description}</p> */}
+                {/* <p className="text-sm font-normal mt-1">{repo.description}</p> 
                 <div className="flex items-center gap-4 mt-2 text-sm  font-normal ">
                   <span className="flex items-center gap-1">
                     <Star className="w-4 h-4" />
@@ -106,12 +202,13 @@ const GitHubProfile = ({ username = 'yourusername' }) => {
             ))}
           </div>
         </CardContent>
-      </Card> 
+      </Card>  */}
 
       {/* GitHub Contribution Graph */}
       <Card>
         <CardHeader>
-          <CardTitle>Contribution Graph</CardTitle>
+          <CardTitle>Contribution Graph :
+             <span className='my-4 block font-normal text-sm text-slate-300 font-texturina text-pretty '> Since I have setup the Github APIs , Im getting that itch , what itch ? ...... But I dont think it matters .  </span></CardTitle>
         </CardHeader>
         <CardContent>
           <div className="w-full h-32 flex items-center justify-center">

@@ -82,8 +82,7 @@ function WobbleGrid(props) {
               Github
             </h2>
             <p className="mt-4 text-left  text-base/6 text-white">
-              With over 100,000 mothly active bot users, Gippity AI is the most
-              popular AI platform for developers.
+               Stepping in , and in awe of the world of Open Source Web 👩🏻‍🚀🌟
             </p>
             <div className="container w-full mx-auto p-4  text-neutral-200 ">
               <GitHubProfile username="Rach1507" />

@@ -94,8 +94,8 @@ export default function TwitterWobbleCard() {
           </blockquote>
           </div>
 
-
-          <blockquote className="twitter-tweet">
+<div>
+<blockquote className="twitter-tweet">
             <p lang="en" dir="ltr">
               4/4 It adds to my sense of contribution—making life easier for
               people of the country. Imagine the collective impact of engineers
@@ -116,7 +116,10 @@ export default function TwitterWobbleCard() {
               October 2, 2024
             </a>
           </blockquote>
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just got my ticket for <a href="https://twitter.com/nextjs?ref_src=twsrc%5Etfw">@nextjs</a> Conf — claim yours!<a href="https://t.co/HqzNNpEvui">https://t.co/HqzNNpEvui</a></p>&mdash; Rachitha Br (@RachithaBr) <a href="https://twitter.com/RachithaBr/status/1833892623280439805?ref_src=twsrc%5Etfw">September 11, 2024</a></blockquote> 
         </div>
+</div>
+ 
         <script async src="https://platform.twitter.com/widgets.js"></script>
       </WobbleCard>
     );
