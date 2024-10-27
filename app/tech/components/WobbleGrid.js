@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { WobbleCard } from "./ui/wobble-card";
 import "dev-widget";
@@ -9,7 +7,7 @@ import { CategoriesBentoGrid } from "./CategoriesBentoGrid";
 import GitHubProfile from './GitHubProfile';
 
 
-function WobbleGrid(props) {
+function WobbleGrid() {
   return (
     <>
       {/* <CategoriesBentoGrid /> */}
@@ -29,7 +27,7 @@ function WobbleGrid(props) {
           </div>
         </WobbleCard>
         <WobbleCard containerClassName="col-span-1 lg:col-span-1 bg-blue-900 bg-opacity-50 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-          <div className="">
+          <div className="grid col-span-4 ">
             <h2 className=" text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
               Weekly Code Reports 🫡
             </h2>
@@ -40,6 +38,8 @@ function WobbleGrid(props) {
             <CategoriesBentoGrid dataSize={1} />
           </div>
         </WobbleCard>
+
+
         {/* <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 bg-opacity-50 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
       <div className="w-full text-left ">
         <h2 className="text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white ">
@@ -50,7 +50,6 @@ function WobbleGrid(props) {
           popular AI platform for developers.
         </p>
         <CategoriesBentoGrid dataSize={3} />
-
       </div>
     </WobbleCard> */}
 
