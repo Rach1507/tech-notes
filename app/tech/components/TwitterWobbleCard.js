@@ -12,14 +12,14 @@ export default function TwitterWobbleCard() {
           </h2>
           <p className="mt-4  text-neutral-200">
             I knoww , everybody lovess Danny Ricc .
-            <p className="w-full font-bold text-m ">PS : If u dont see the
+            <span className="w-full font-bold text-m ">PS : If u dont see the
             tweets , please log in to X . Im sorry , but it is what is... WHY u ask ?
             check     <Link
               href="https://stackoverflow.com/a/78186868"
               className="font-bold "
             >
               this
-            </Link> </p> 
+            </Link> </span> 
        
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function TwitterWobbleCard() {
               October 2, 2024
             </a>
           </blockquote>
-          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just got my ticket for <a href="https://twitter.com/nextjs?ref_src=twsrc%5Etfw">@nextjs</a> Conf — claim yours!<a href="https://t.co/HqzNNpEvui">https://t.co/HqzNNpEvui</a></p>&mdash; Rachitha Br (@RachithaBr) <a href="https://twitter.com/RachithaBr/status/1833892623280439805?ref_src=twsrc%5Etfw">September 11, 2024</a></blockquote> 
+          <blockquote className="twitter-tweet"><p lang="en" dir="ltr">Just got my ticket for <a href="https://twitter.com/nextjs?ref_src=twsrc%5Etfw">@nextjs</a> Conf — claim yours!<a href="https://t.co/HqzNNpEvui">https://t.co/HqzNNpEvui</a></p>&mdash; Rachitha Br (@RachithaBr) <a href="https://twitter.com/RachithaBr/status/1833892623280439805?ref_src=twsrc%5Etfw">September 11, 2024</a></blockquote> 
         </div>
 </div>
  

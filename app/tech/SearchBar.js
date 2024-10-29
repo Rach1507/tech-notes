@@ -4,7 +4,6 @@ import { useState } from "react";
 // function SearchBar() {
 //   const [showInput, setShowInput] = useState(false);
 
-//   console.log("showInput", showInput);
 
 //   return (
 //     <button onClick={() => setShowInput(true)}>

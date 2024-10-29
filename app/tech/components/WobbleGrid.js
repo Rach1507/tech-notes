@@ -1,13 +1,20 @@
 "use client";
-import React from "react";
+import React ,{useEffect} from "react";
 import { WobbleCard } from "./ui/wobble-card";
-import "dev-widget";
 import TwitterWobbleCard from "./TwitterWobbleCard";
 import { CategoriesBentoGrid } from "./CategoriesBentoGrid";
 import GitHubProfile from './GitHubProfile';
 
 
 function WobbleGrid() {
+
+
+    useEffect(() => {
+      // Load dev-widget script here
+      import('dev-widget');
+    }, []);
+
+
   return (
     <>
       {/* <CategoriesBentoGrid /> */}
@@ -64,9 +71,9 @@ function WobbleGrid() {
             </p>
             <div className="flex justify-center items-center w-full p-8 ">
               <dev-widget
-                data-username="saurabhdaware"
+                // data-username="saurabhdaware"
                 data-theme="pink"
-                //   data-username ="rachitha"
+                  data-username ="rachitha"
                 data-width="30rem"
               ></dev-widget>
             </div>

@@ -13,7 +13,6 @@ import clsx from "clsx";
 
 export function CategoriesBentoGrid({ dataSize }) {
   let gridItems = items.slice(0, dataSize);
-  console.log("gridItems", gridItems);
   return (
     <BentoGrid className="pt-5 w-full mx-auto ">
       {gridItems.map((item, i) => (
